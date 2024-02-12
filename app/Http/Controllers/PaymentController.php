@@ -11,7 +11,7 @@ class PaymentController extends Controller
         $tourKey = sprintf('tour_id_%s', $id);
         $carts = Session::get('carts')[$tourKey];
         $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-        $vnp_Returnurl = "http://127.0.0.1:8000/pay/{$id}";
+        $vnp_Returnurl = route('pay', $carts['id']);
         $vnp_TmnCode = "K6T6O5YT";//Mã website tại VNPAY 
         $vnp_HashSecret = "OTPZHHSFJBHTWRQBFLVRSEZXFCSCVZRO"; //Chuỗi bí mật
 
