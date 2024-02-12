@@ -65,7 +65,8 @@ Route::get('/categoryTour/{id}', 'PageController@getCategory');
 Route::get('/bookTour/{id}', 'BookTourController@index');
 Route::post('/orderTour/{id}', 'BookTourController@orderTour')->name('orderTour');
 Route::get('/orderPage/{id}', 'BookTourController@showOrder')->name('orderPage');
-Route::get('/pay/{id}', 'BookTourController@pay')->name('pay');
+Route::match(['get', 'post'],'/pay/{id}', 'BookTourController@pay')->name('pay');
+Route::post('/vnpay/{id}', 'PaymentController@vnpay')->name('vnpay');
 
 //Search
 Route::get('/search', 'PageController@search')->name('search');

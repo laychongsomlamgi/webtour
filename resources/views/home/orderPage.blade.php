@@ -54,7 +54,10 @@
             </table>
             <div class="d-flex justify-content-between">
                 <a href="{{url('bookTour', $carts['id'])}}" type="submit" class="btn btn-primary">Quay lại</a>
-                <a href="{{route('pay', $carts['id'])}}" type="submit" class="btn btn-primary">Thanh toán</a>
+                <form action="{{route('vnpay', $carts['id'])}}" method="post">
+                  @csrf
+                  <button type="submit" class="btn btn-primary" name="redirect">Thanh toán</button>
+                </form>
             </div>
           </div>
     </div>
