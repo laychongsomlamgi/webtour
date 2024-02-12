@@ -49,6 +49,7 @@ class PageController extends Controller
         $tours = BillDetail::join('tours', 'tours.tour_id', 'bill_detail.tour_id')
         ->join('bill', 'bill.bill_id', 'bill_detail.bill_id')
         ->where('bill.id', Auth::id())
+        ->orderBy('bill.bill_date', 'desc')
         ->select(
             'tours.tour_id',
             'tours.tour_name',
