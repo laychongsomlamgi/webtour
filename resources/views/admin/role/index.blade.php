@@ -6,6 +6,9 @@
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
               <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3 d-flex justify-content-between">
                 <h6 class="text-white text-capitalize ps-3">Bảng Account</h6>
+                <button class="btn  ">
+                    <a class="text-white" href="{{route('role.create')}}">Thêm mới</a>
+                </button>
               </div>
             </div>
             <div class="card-body px-0 pb-2">
@@ -13,36 +16,28 @@
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Mã account</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Tên account</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Type</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Mã role</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Tên role</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Action</th>
                       <th class="text-secondary opacity-7"></th>
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($account as $a)
+                    @foreach ($role as $r)
                     <tr>
                         <td>
                           <div class="d-flex px-2 py-1">
                             <div class="d-flex flex-column justify-content-center">
-                              <h6 class="mb-0 text-sm">{{$a->id}}</h6>
+                              <h6 class="mb-0 text-sm">{{$r->role_id}}</h6>
                             </div>
                           </div>
                         </td>
                         <td>
-                          <p class="text-xs font-weight-bold mb-0">{{$a->name}}</p>
-                        </td>
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0" style="text-align: center;">{{$a->email}}</p>
-                        </td>
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0" style="text-align: center;">{{$a->role_name}}</p>
+                          <p class="text-xs font-weight-bold mb-0">{{$r->role_name}}</p>
                         </td>
                         <td class="align-middle text-center text-sm d-flex justify-content-center">
-                          <a href="{{route('account.edit', $a->id)}}" class="btn btn-primary">Sửa</a>
-                          <form action="{{route('account.destroy', $a->id)}}" method="post" style="margin-left: 5px">
+                          <a href="{{route('role.edit', $r->role_id)}}" class="btn btn-primary">Sửa</a>
+                          <form action="{{route('role.destroy', $r->role_id)}}" method="post" style="margin-left: 5px">
                             @method('DELETE')
                             @csrf
                           <button  type="submit" class="btn btn-primary" 

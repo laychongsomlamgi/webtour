@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th2 13, 2024 lúc 04:49 PM
+-- Thời gian đã tạo: Th2 13, 2024 lúc 05:31 PM
 -- Phiên bản máy phục vụ: 10.1.34-MariaDB
 -- Phiên bản PHP: 7.2.8
 
@@ -226,21 +226,20 @@ CREATE TABLE `users` (
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `user_phone` int(11) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
-  `role_id` int(100) NOT NULL DEFAULT '2'
+  `role_id` int(100) NOT NULL DEFAULT '3'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `user_phone`, `created_at`, `updated_at`, `role_id`) VALUES
-(1, 'admin', 'admin@admin.com', '$2y$10$F.efJnWg3nhrvbDAKoAL7.HkBmDZkGId9pme.fXbugDlWVw6PAPlu', NULL, '2024-02-13 15:44:34', '2024-02-13 15:44:34', 1),
-(4, 'Duy Linh', 'phanlinh2652002@gmail.com', '$2y$10$9VBTMe6dIOqLfgryTJkti.eZTTSh.G2raAJDtN4GWVSfT82YmBoZ.', NULL, '2024-02-13 15:45:28', '2024-02-13 15:45:28', 3),
-(8, 'Phan Duy Linh', 'duylinh@gmail.com', '$2y$10$DOVwQdqXYvI0wGYfDk9ji.7Bj74KE0UD9ANppgNsMvmIHXS6crVZq', NULL, '2024-02-13 15:45:28', '2024-02-13 15:45:28', 3),
-(9, 'Employee', 'employee@gmail.com', '$2y$10$t8dyF8hW7qXHuOrbvTtJT.ci2d7dZ3U3DnrNEZtnDG1HNDqvHEYUe', NULL, '2024-02-13 15:45:28', '2024-02-13 15:45:28', 2);
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `created_at`, `updated_at`, `role_id`) VALUES
+(1, 'admin', 'admin@admin.com', '$2y$10$F.efJnWg3nhrvbDAKoAL7.HkBmDZkGId9pme.fXbugDlWVw6PAPlu', '2024-02-13 15:44:34', '2024-02-13 15:44:34', 1),
+(4, 'Duy Linh', 'phanlinh2652002@gmail.com', '$2y$10$9VBTMe6dIOqLfgryTJkti.eZTTSh.G2raAJDtN4GWVSfT82YmBoZ.', '2024-02-13 15:45:28', '2024-02-13 15:45:28', 3),
+(8, 'Phan Duy Linh', 'duylinh@gmail.com', '$2y$10$DOVwQdqXYvI0wGYfDk9ji.7Bj74KE0UD9ANppgNsMvmIHXS6crVZq', '2024-02-13 15:45:28', '2024-02-13 15:45:28', 3),
+(9, 'Employee', 'employee@gmail.com', '$2y$10$t8dyF8hW7qXHuOrbvTtJT.ci2d7dZ3U3DnrNEZtnDG1HNDqvHEYUe', '2024-02-13 16:09:17', '2024-02-13 09:09:17', 2);
 
 --
 -- Chỉ mục cho các bảng đã đổ

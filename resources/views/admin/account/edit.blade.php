@@ -19,10 +19,15 @@
             <input type="text" class="form-control" name="email" value="{{$account->email}}">
         </div>
             <input type="hidden" class="form-control" name="password" value="{{$account->password}}">
-        <div class="input-group input-group-outline my-3">
-            <label class="form-label">Tên account</label> <br>
-            <input type="text" class="form-control" name="type" value="{{$account->type}}">
-        </div>
+            <div>
+                <p>Loại account</p>
+                <select name="role_id" class="form-control border">
+                  <option value="">Chọn loại account</option>
+                  @foreach($roles as $r)
+                  <option value="{{ $r->role_id }}" @if($account->role_id === $r->role_id) selected @endif>{{ $r->role_name }}</option>
+                  @endforeach
+                </select>
+              </div>
         <div class="text-center">
           <button type="submit" class="btn bg-gradient-primary my-4 mb-2">Sửa</button>
         </div>

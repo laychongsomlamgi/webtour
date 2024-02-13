@@ -27,7 +27,7 @@ class AccountRequest extends FormRequest
             //
             'name' => 'required',
             'email' => 'required|email',
-            'type' => 'required'
+            'role_id' => 'required'
         ];
     }
 }
