@@ -16,7 +16,7 @@
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
-        @if(auth()->user()->type === 'admin')
+        @if(auth()->user()->role_id === 1)
         <li class="nav-item">
           <a class="nav-link text-white " href="{{route('category.index')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -58,7 +58,7 @@
           </a>
         </li>
         @endif
-        @if(auth()->user()->type === 'admin' || auth()->user()->type === 'employee')
+        @if(auth()->user()->role_id === 1 || auth()->user()->role_id === 2)
         <li class="nav-item">
           <a class="nav-link text-white " href="{{route('news.index')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">

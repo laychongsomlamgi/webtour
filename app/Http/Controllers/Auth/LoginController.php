@@ -15,7 +15,7 @@ class LoginController extends Controller
     public function login(Request $request){
         $credentials = $request->only('email', 'password');
         if(Auth::attempt($credentials)){
-            if(Auth::user()->type === 'admin' || Auth::user()->type === 'employee'){
+            if(Auth::user()->role_id === 1 || Auth::user()->role_id === 2){
                 return redirect()->route('dashboard');
             }
             return redirect('/');

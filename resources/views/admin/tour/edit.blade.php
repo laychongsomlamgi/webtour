@@ -37,7 +37,9 @@
           </div>
           <div>
             <p >Ảnh</p>
-            <input type="file" name="tour_image">
+            <input type="file" name="tour_image"/>
+            <img src="{{ URL::to('/') }}/images/{{ $tour->tour_image }}" class="img-thumbnail" width="100" />
+            <input type="hidden" name="hidden_image" value="{{ $tour->tour_image }}" />
           </div>
           <div class="input-group input-group-outline my-3">
             <label class="form-label">Các điểm đến</label>
