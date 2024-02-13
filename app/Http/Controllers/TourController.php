@@ -19,7 +19,7 @@ class TourController extends Controller
             'tours.tour_price',
             'tourguides.tourGuide_name',
             'tours.tour_quantytiDate'
-        )->paginate(2);
+        )->paginate(10);
         return view('admin.tour.index', compact('tours'));
     }
     public function show($id){
