@@ -67,13 +67,13 @@
             <label class="form-label">Ngày kết thúc</label>
             <input type="text" class="form-control" name="tour_dateEnd" value="{{$tour->tour_dateEnd}}">
           </div>
-          <div class="input-group input-group-outline my-3">
-            <p class="form-label">Mô tả</p>
-            <textarea type="text" class="form-control mt-5" name="tour_description"style="height: 150px;">{{$tour->tour_description}}</textarea>
+          <div class="input-group input-group-outline my-3" style="display: inline">
+            <p>Mô tả</p>
+            <textarea type="text" class="form-control mt-5" name="tour_description"style="width: 100%;" id="tour_trip">{{$tour->tour_description}}</textarea>
           </div>
           <div class="input-group input-group-outline my-3" style="display: inline">
             <p>Hành trình</p>
-            <textarea type="text" class="form-control mt-5" name="tour_trip"style="width: 100%;" id="tour_trip">{{$tour->tour_trip}}</textarea>
+            <textarea type="text" class="form-control mt-5" name="tour_trip"style="width: 100%;" id="tour_description">{{$tour->tour_trip}}</textarea>
           </div>
           <div>
             <p class="form-label">Hướng dẫn viên</p>
@@ -94,6 +94,11 @@
     <script>
         ClassicEditor
             .create(document.getElementById('tour_trip'))
+            .catch(error =>{
+                console.error(error);
+            });
+            ClassicEditor
+            .create(document.getElementById('tour_description'))
             .catch(error =>{
                 console.error(error);
             });

@@ -66,9 +66,9 @@
             <label class="form-label">Ngày kết thúc</label>
             <input type="text" class="form-control" name="tour_dateEnd">
           </div>
-          <div class="input-group input-group-outline my-3">
-            <p class="form-label">Mô tả</p>
-            <textarea type="text" class="form-control mt-5" name="tour_description"style="height: 150px;"></textarea>
+          <div class="input-group input-group-outline my-3" style="display: inline">
+            <p>Mô tả</p>
+            <textarea type="text" class="form-control mt-5" name="tour_description"style="width: 100%;" id="tour_description"></textarea>
           </div>
           <div class="input-group input-group-outline my-3" style="display: inline">
             <p>Hành trình</p>
@@ -93,6 +93,11 @@
     <script>
         ClassicEditor
             .create(document.getElementById('tour_trip'))
+            .catch(error =>{
+                console.error(error);
+            });
+            ClassicEditor
+            .create(document.getElementById('tour_description'))
             .catch(error =>{
                 console.error(error);
             });

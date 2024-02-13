@@ -18,7 +18,7 @@
             <div class="accordion-item">
               <!-- <div id="collapse" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion_1"> -->
               <div class="accordion-body">
-                {{$tours->tour_description}}
+                {!!$tours->tour_description!!}
               </div>
               <!-- </div> -->
             </div> <!-- .accordion-item -->

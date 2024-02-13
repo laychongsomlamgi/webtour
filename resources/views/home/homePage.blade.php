@@ -119,7 +119,7 @@
                 <h2 class="section-title text-center mb-3 aos-init title-tour-summer-main"
                     style="font-size: 45px !important; font-weight: bold;" data-aos="fade-left"
                     data-aos-duration="1000">
-                    Tours du lịch hè 2023</h2>
+                    Tours du lịch hè</h2>
                 <p class="aos-init content-tour-summer-main" data-aos="fade-up" data-aos-duration="1000">Thật tuyệt vời khi giao quyền sắp xếp tour du
                     lịch và
                     kết hợp nghỉ ngơi trong thời gian gần 1
@@ -130,8 +130,8 @@
         </div>
         <div class="row align-items-stretch aos-init list-tour-summer-main" data-aos="fade-right" data-aos-duration="1200">
 
+            @foreach ($tours as $t)
             <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
-                @foreach ($tours as $t)
                 <div class="item item-search">
                     <a class="media-thumb" href="{{url('detailTour', $t->tour_id)}}">
                         <div class="media-text">
@@ -151,8 +151,8 @@
                     </a>
                 </div>
                 
-                @endforeach
             </div>
+            @endforeach
         </div>
 </div>
 

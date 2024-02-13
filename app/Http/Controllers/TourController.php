@@ -13,6 +13,7 @@ class TourController extends Controller
     //
     public function index(){
         $tours = Tour::join('tourguides', 'tours.tourGuide_id', 'tourguides.tourGuide_id')
+        ->orderBy('category_id', 'desc')
         ->select(
             'tours.tour_id',
             'tours.tour_name',
