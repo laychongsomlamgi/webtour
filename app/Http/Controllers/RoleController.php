@@ -16,7 +16,7 @@ class RoleController extends Controller
     }
     public function store(Request $request){
         $role = Role::query()->create([
-            'role_name' => $request->role_name
+            'role_name' => $request->role_name 
         ]);
         return redirect()->route('role.index');
     }
