@@ -38,6 +38,7 @@ class BookTourController extends Controller
                 'vehicle' => $tour->tour_vehicle,
                 'dateStart' => $tour->tour_dateStart,
                 'quantytiDate' => $tour->tour_quantytiDate,
+                'date' => $request->date,
                 'customer_name' => $request->customer_name,
                 'customer_phone' => $request->customer_phone,
                 'customer_email' => $request->customer_email,
@@ -59,6 +60,7 @@ class BookTourController extends Controller
             $tourCart['vehicle'] =  $tour->tour_vehicle;
             $tourCart['dateStart'] =  $tour->tour_dateStart;
             $tourCart['quantytiDate'] =  $tour->tour_quantytiDate;
+            $tourCart['date'] =  $request->date;
             $tourCart['customer_name'] =  $request->customer_name;
             $tourCart['customer_phone'] =  $request->customer_phone;
             $tourCart['customer_email'] =  $request->customer_email;
@@ -102,6 +104,7 @@ class BookTourController extends Controller
                 $billDetails->bill_id = $bill->bill_id;
                 $billDetails->tour_id = $carts['id'];
                 $billDetails->customer_id = $customers->customer_id;
+                $billDetails->dateStart = $carts['date'];
                 $billDetails->quantity_OldPerson = $carts['quantity_OldPerson'];
                 $billDetails->quantity_YoungPerson = $carts['quantity_YoungPerson'];
                 $billDetails->quantity_Children = $carts['quantity_Children'];

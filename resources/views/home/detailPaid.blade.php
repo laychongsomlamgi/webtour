@@ -26,7 +26,7 @@
                 </tr>
                 <tr>
                   <th>Khởi hành:</th>
-                  <td>{{$tours->tour_dateStart}}</td>
+                  <td>{{date('d-m-Y', strtotime($tours->dateStart))}}</td>
                 </tr>
                 <tr>
                   <th>Vận Chuyển:</th>

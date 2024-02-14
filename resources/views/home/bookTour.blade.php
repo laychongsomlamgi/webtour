@@ -165,12 +165,12 @@
                   <input type="email" class="form-control" id="email" name="customer_email">
                 </div>
               </div>
-              {{-- <div class="col-6">
+              <div class="col-6">
                 <div class="form-group">
                   <label class="text-black" for="dateStart">Chọn ngày mà bạn muốn khởi hành </label>
-                  <input type="date" class="form-control" id="dateStart">
+                  <input type="date" class="form-control" id="dateStart"  name="date">
                 </div>
-              </div> --}}
+              </div>
             </div>
             <div class="form-group">
               <label class="text-black" for="note">Nội dung ghi chú</label>

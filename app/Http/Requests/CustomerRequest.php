@@ -28,6 +28,7 @@ class CustomerRequest extends FormRequest
             'customer_name' => 'required',
             'customer_phone' => 'required',
             'customer_email' => 'required|email',
+            'date' => 'required',
         ];
     }
 }

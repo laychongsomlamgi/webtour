@@ -67,7 +67,7 @@
                                 {{-- <p class="tour-sale-p2">QUẢNG BÌNH – ĐỘNG PHONG NHA – ĐỘNG THIÊN ĐƯỜNG – SUỐI NƯỚC
                                     MỌOC
                                     – SÔNG CHÀY – HANG TỐI – CỒN CÁT QUANG PHÚ</p> --}}
-                                <p class="tour-sale-p3">Khởi hành: {{date('d-m-Y', strtotime($t->tour_dateStart))}}<span
+                                <p class="tour-sale-p3">Khởi hành: {{$t->tour_dateStart}}<span
                                         class="tour-sale-span1">
                                         {{number_format($t->tour_discount)}}</span><span class="tour-sale-span2">{{number_format($t->tour_price)}}</span></p>
                                 <a href="{{url('detailTour', $t->tour_id)}}" class="btn-detail-tour-sale btn">Xem chi tiết</a>
@@ -90,7 +90,7 @@
                                         LAO
                                         CHÀM</p> --}}
                                     <p>{{$t->tour_quantytiDate}}</p>
-                                    <p>Khởi hành: {{date('d-m-Y', strtotime($t->tour_dateStart))}}</p>
+                                    <p>Khởi hành: {{$t->tour_dateStart}}</p>
                                     {{-- <p class="text-center" style="color: #ada9a9; font-size: 20px !important;">
                                         (Click
                                         xem chi tiết)
