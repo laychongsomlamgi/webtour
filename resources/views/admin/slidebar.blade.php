@@ -68,6 +68,14 @@
         @endif
         @if(auth()->user()->role_id === 1 || auth()->user()->role_id === 2)
         <li class="nav-item">
+          <a class="nav-link text-white " href="{{route('customer.index')}}">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-person-walking-luggage"></i>
+            </div>
+            <span class="nav-link-text ms-1">Danh sách khách hàng</span>
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link text-white " href="{{route('news.index')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="fa-regular fa-newspaper"></i>

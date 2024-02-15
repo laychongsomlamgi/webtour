@@ -51,6 +51,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
     Route::resource('tourguide', 'TourGuideController');
     Route::resource('account', 'AccountController');
     Route::resource('role', 'RoleController');
+    Route::resource('customer', 'CustomerController');
     Route::resource('news', 'NewsController');
     Route::get('bill', 'BillController@index');
     Route::get('billdetail/{id}', 'BillController@detail');

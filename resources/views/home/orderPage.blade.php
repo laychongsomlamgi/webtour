@@ -22,7 +22,13 @@
                 </tr>
                 <tr>
                   <td>
-                    <p>{{$carts['name']}} - Giá trẻ em x <span>{{$carts['quantity_YoungPerson']}}</span></p>
+                    <p>{{$carts['name']}} - Giá trẻ em x <span>
+                      @if($carts['quantity_YoungPerson'] != 0)
+                        {{$carts['quantity_YoungPerson']}}
+                      @else
+                        0
+                      @endif
+                    </span></p>
                   </td>
                   <td>
                         <p>{{number_format(($carts['price_YoungPerson']) * $carts['quantity_YoungPerson'])}}</p> 
@@ -32,13 +38,13 @@
                   <td>
                     <p>{{$carts['name']}} - Giá trẻ nhỏ x <span>0</span></p>
                   </td>
-                  <td>0VND</td>
+                  <td>0</td>
                 </tr>
                 <tr>
                   <td>
                     <p>{{$carts['name']}} - Giá trẻ sơ sinh x <span>0</span></p>
                   </td>
-                  <td>0VND</td>
+                  <td>0</td>
                 </tr>
                 <tr>
                   <td>Tạm tính</td>
