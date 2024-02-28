@@ -60,10 +60,18 @@
             </table>
             <div class="d-flex justify-content-between">
                 <a href="{{url('bookTour', $carts['id'])}}" type="submit" class="btn btn-primary">Quay lại</a>
-                <form action="{{route('vnpay', $carts['id'])}}" method="post">
-                  @csrf
-                  <button type="submit" class="btn btn-primary" name="redirect">Thanh toán</button>
-                </form>
+                <div class="d-flex">
+                  <form action="{{url('pay', $carts['id'])}}" method="post">
+                    @csrf
+                    <button type="submit" class="btn btn-primary">Thanh toán tại quầy</button>
+                  </form>
+                  @if($carts['priceTotal'] < 100000000)
+                  <form action="{{url('vnpay', $carts['id'])}}" method="post">
+                    @csrf
+                    <button type="submit" class="btn btn-primary" name="redirect">Thanh toán VnPay</button>
+                  </form>
+                  @endif
+                </div>
             </div>
           </div>
     </div>
