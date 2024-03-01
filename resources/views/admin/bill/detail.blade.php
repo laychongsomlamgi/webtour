@@ -5,7 +5,7 @@
             <div class="car my-4">
                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                     <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3 d-flex justify-content-between">
-                      <h6 class="text-white text-capitalize ps-3">Thông tin hướng dẫn viên</h6>
+                      <h6 class="text-white text-capitalize ps-3">Chi tiết hóa đơn</h6>
                           <button class="btn  ">
                               <a class="text-white" href="{{url('admin/bill')}}">Quay lại</a>
                           </button>

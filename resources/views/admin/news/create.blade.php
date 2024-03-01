@@ -2,7 +2,7 @@
 @section('content')
 <div style="min-height: 650px">
     <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3 d-flex justify-content-between">
-        <h3 class="text-white text-capitalize ps-3">Thêm tin tức mới mới</h3>
+        <h3 class="text-white text-capitalize ps-3">Thêm tin tức mới</h3>
         <button class="btn  ">
             <a class="text-white" href="{{route('news.index')}}">Quay lại</a>
         </button>
