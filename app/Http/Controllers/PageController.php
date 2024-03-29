@@ -13,7 +13,7 @@ class PageController extends Controller
 {
     //
     public function getInfo(){
-        $tours = Tour::limit(6)->get();
+        $tours = Tour::limit(9)->get();
         //Tour trong nước
         $tourDomestic = Tour::where('category_id', '1')->limit(6)->get();
         return view('home.homePage', compact('tours', 'tourDomestic'));
