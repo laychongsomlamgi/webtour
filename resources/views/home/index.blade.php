@@ -3,7 +3,7 @@
 <head>
 @include('home.head')
 
-<title>Thanh Tung Tour</title>
+<title>Hoang Viet Tour</title>
 </head>
 <body>
 

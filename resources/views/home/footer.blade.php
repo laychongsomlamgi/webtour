@@ -4,8 +4,8 @@
             <div class="row">
                 <div class="col-md-6 col-lg-3">
                     <div class="widget">
-                        <h3 class="heading" style="font-size: 30px; font-weight: bold;">ThanhTungTour</h3>
-                        <p>Công ty được sự bảo hộ của nhà nước và được cấp phép kinh doanh online. ® ThanhTungTour nay
+                        <h3 class="heading" style="font-size: 30px; font-weight: bold;">HoangVietTour</h3>
+                        <p>Công ty được sự bảo hộ của nhà nước và được cấp phép kinh doanh online. ® HoangVietTour nay
                             là
                             thương hiệu mới của Tour Cafe</p>
                     </div>
@@ -49,7 +49,7 @@
                         <h3 class="heading">Thông tin liên hệ</h3>
                         <ul class="list-unstyled quick-info links">
                             <li class="email">
-                                <p>phanlinh2652002@gmail.com</p>
+                                <p>HoangViet2652002@gmail.com</p>
                             </li>
                             <li class="phone">
                                 <p>096 4028 292</p>
@@ -73,9 +73,9 @@
                     <p>Bản quyền &copy;
                         <script>document.write(new Date().getFullYear());</script>. Đã đăng ký bản quyền.
                         &mdash;
-                        Thiết kế bởi <a href="https://www.facebook.com/duylinh.phan.3192" class="link-highlight">Phan Duy Linh</a>
+                        Thiết kế bởi <a href="https://www.facebook.com/duylinh.phan.3192" class="link-highlight">Tạ Hoàng Việt</a>
                         <!-- License information: https://untree.co/license/ --> Phân phối bởi <a
-                            href="https://www.facebook.com/duylinh.phan.3192" target="_blank">Duy Linh</a>
+                            href="https://www.facebook.com/duylinh.phan.3192" target="_blank">Hoang Viet</a>
                     </p>
                 </div>
 

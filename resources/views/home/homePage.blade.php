@@ -123,7 +123,7 @@
                 <p class="aos-init content-tour-summer-main" data-aos="fade-up" data-aos-duration="1000">Thật tuyệt vời khi giao quyền sắp xếp tour du
                     lịch và
                     kết hợp nghỉ ngơi trong thời gian gần 1
-                    tháng cho ThanhTungTour. Đặc biệt nhận được sự gần gũi, thân thiện, cảm giác như tình cảm gia đình
+                    tháng cho HoangVietTour. Đặc biệt nhận được sự gần gũi, thân thiện, cảm giác như tình cảm gia đình
                     (
                     VÔ GIÁ ). Hy vọng sẽ sớm gặp lại…</p>
             </div>
@@ -337,7 +337,7 @@
 
             <div class="col-lg-5">
                 <h2 class="section-title text-left mb-4" style="font-weight: bold; font-size: 40px !important;"
-                    data-aos="fade-right" data-aos-duration="1000">Hành trình cùng ThanhTungTour</h2>
+                    data-aos="fade-right" data-aos-duration="1000">Hành trình cùng HoangVietTour</h2>
                 <p data-aos="fade-up" data-aos-duration="1200">Du lịch Việt Nam là một hành trình thú vị và đầy khám phá. Với những nét đẹp tự nhiên hùng
                     vĩ,
                     văn hóa đa dạng và những trải nghiệm độc đáo, Việt Nam đã trở thành một điểm đến hấp dẫn cho
@@ -346,7 +346,7 @@
                     chuyên nghiệp sẽ giúp bạn khám phá và tìm hiểu tất cả những điều thú vị mà đất nước Việt Nam
                     mang lại.</p>
 
-                <p data-aos="fade-up" data-aos-duration="1200" class="mb-4">Ngoài ra, các hướng dẫn viên của ThanhTungTour còn giúp bạn giải đáp các thắc mắc và
+                <p data-aos="fade-up" data-aos-duration="1200" class="mb-4">Ngoài ra, các hướng dẫn viên của HoangVietTour còn giúp bạn giải đáp các thắc mắc và
                     đưa
                     ra những lời khuyên hữu ích về an toàn và các quy định địa phương. Họ cũng sẽ giúp bạn đàm
                     phán

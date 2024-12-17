@@ -1,7 +1,7 @@
 <nav class="site-nav">
     <div class="container">
         <div class="site-navigation">
-            <a href="{{url('/')}}" class="logo m-0">Thanh Tung Tour <span class="text-primary">.</span></a>
+            <a href="{{url('/')}}" class="logo m-0">Hoang Viet Tour <span class="text-primary">.</span></a>
 
             <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
                 <li class="active"><a href="{{url('/')}}">Trang chủ</a></li>
