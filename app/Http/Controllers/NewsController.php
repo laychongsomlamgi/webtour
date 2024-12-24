@@ -35,12 +35,16 @@ class NewsController extends Controller
         return view('admin.news.edit', compact('news'));
     }
     public function update(News $news, NewsRequest $request) {
+        $image_name = $request->hidden_image;
         $image = $request->file('new_image');
-        $new_name = rand() . '.' . $image->getClientOriginalExtension();
-        $image->move(public_path('news/images'), $new_name);
+        if($image != ''){
+            $image_name = rand() . '.' . $image->getClientOriginalExtension();
+            $image->move(public_path('news/images'), $image_name);
+        }
+
         $form_data = array(
             'new_name' => $request->new_name,
-            'new_image' => $new_name,
+            'new_image' => $image_name,
             'new_date' => now(),
             'new_description' => $request->new_description
         );

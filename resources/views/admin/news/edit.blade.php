@@ -17,6 +17,8 @@
           <div>
             <p >Ảnh</p>
             <input type="file" name="new_image">
+          <img src="{{ URL::to('/') }}/news/images/{{ $news->new_image }}" alt="" class="img-thumbnail" width="100">
+          <input type="hidden" name="hidden_image" value="{{ $news->new_image }}" />
           </div>
          
           <div class="input-group input-group-outline my-3" style="display: inline">
